@@ -1,0 +1,4 @@
+git config --global user.name "miki050405"
+git config --global user.email "malika.usenova555@gmail.com"
+git add .
+git commit -m "added lesson 1"
