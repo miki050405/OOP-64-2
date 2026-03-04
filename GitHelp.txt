@@ -1,4 +1,10 @@
 git config --global user.name "miki050405"
 git config --global user.email "malika.usenova555@gmail.com"
-git add .
-git commit -m "added lesson 1"
+git add . в буфер
+git commit -m "added lesson 1" локальное сохранение
+git push origin main/master
+
+git branch
+git checkout/ switch
+git branch name
+git switch 

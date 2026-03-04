@@ -24,7 +24,6 @@ kirito = Hero("Kirito")
 asuna = Hero("Asuna")
 kirito.action()
 
-
 # Дочерний класс
 class MageHero(Hero):
 
