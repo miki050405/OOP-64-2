@@ -8,3 +8,24 @@ git branch
 git checkout/ switch
 git branch name
 git switch 
+
+production
+
+stage|test
+
+feat/register
+feat/create_order
+feat/filter_news
+
+"feat: added register code in file name.py #1021"
+"fix: fixed register in line 123"
+"update: register added email logic"
+
+
+git merge branch_name
+git pull origin main
+
+
+cd ../      выйти их папки
+cd dir_name перейти в указанную папку
+ls просмотреть что есть с этой папке
