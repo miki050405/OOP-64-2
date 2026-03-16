@@ -7,12 +7,12 @@ rates =  {
 }
 class Money:
     def __init__(self, amount, currency):
-        self.amount = amount
+        self.__amount = amount
         self.currency = currency
 
     def convert_to_kgs(self):
         if self.currency != "KGS":
-            self.amount = self.amount * rates[self.currency]
+            self.__amount = self.__amount * rates[self.currency]
             self.currency = "KGS"
         else:
             pass
@@ -23,7 +23,7 @@ class Money:
                 self.convert_to_kgs()
             if other.currency != "KGS":
                 other.convert_to_kgs()
-        return Money(self.amount + other.amount, self.currency)
+        return Money(self.__amount + other.__amount, self.currency)
         
 
     def __sub__(self, other):
@@ -32,16 +32,16 @@ class Money:
                 self.convert_to_kgs()
             if other.currency != "KGS":
                 other.convert_to_kgs()
-        return Money(self.amount - other.amount, self.currency)
+        return Money(self.__amount - other.__amount, self.currency)
     
     def __mul__(self, other):
-        return Money(self.amount * other, self.currency)
+        return Money(self.__amount * other, self.currency)
     
     def __truediv__(self, other):
-        return Money(self.amount / other, self.currency)
+        return Money(self.__amount / other, self.currency)
     
     def __str__(self):
-        return f"{self.amount} {self.currency}"
+        return f"{self.__amount} {self.currency}"
 
 money1 = Money(100, "USD")
 print(money1)
